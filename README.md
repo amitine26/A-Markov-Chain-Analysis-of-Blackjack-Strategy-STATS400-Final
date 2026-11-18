@@ -129,7 +129,7 @@ The dealer stands on all totals of 17 or higher, including soft 17. A natural bl
 
 The simulator uses two discrete-time Markov chain models adapted from Sections 3 and 4 of the paper. It also includes randomized gameplay so users can compare observed outcomes with analytical expectations.
 
-### Method 1 — Absorbing Markov chains for individual hands
+### Method 1: Absorbing Markov chains for individual hands
 
 A hand is represented by states containing its total, ace status, and other relevant characteristics. Terminal states correspond to completed hands, including busts and blackjacks.
 
@@ -149,7 +149,7 @@ Terminal values are determined by the modeled payoff rules. The expectation is e
 
 Relevant functions: `dealer\_end()`, `hand\_model()`, and the model's `predeal()` method.
 
-### Method 2 — Shoe evolution and stationary distributions
+### Method 2: Shoe evolution and stationary distributions
 
 The shoe model groups previously observed cards into low, medium, and high categories and represents the state as $(L,M,H)$. As cards are removed, the category counts change; reshuffling returns the shoe to its initial state.
 

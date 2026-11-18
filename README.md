@@ -217,7 +217,7 @@ A\_Markov\_Chain\_Analysis\_of\_Blackjack\_Strategy\_STATS400\_Final/
 
 The R script is intentionally self-contained. It contains the original strategy tables, shoe-equilibrium functions, hand-model functions, physical shoe simulation, inline HTML/CSS card rendering, and Shiny session controller.
 
-### Relationship to the original MATLAB toolbox
+### Original MATLAB toolbox Adaptation
 
 |Original toolbox component|R adaptation|
 |-|-|

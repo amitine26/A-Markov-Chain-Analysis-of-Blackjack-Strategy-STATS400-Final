@@ -207,7 +207,7 @@ The app is not a full replication of every numerical result or figure in the ori
 
 ## Repository structure
 
-The minimum repository contains:
+The repository contains:
 
 ```text
 A-Markov-Chain-Analysis-of-Blackjack-Strategy-STATS400-Final/

@@ -1,4 +1,4 @@
-# A Markov Chain Analysis of Blackjack Strategy — STATS400 Final
+# A Markov Chain Analysis of Blackjack Strategy
 
 **STATS 400 | Fall 2026 | Final Project**
 
@@ -9,12 +9,6 @@
 * Elan Hashem
 * Camden White
 
-
-
-!\[R](https://img.shields.io/badge/Language-R-276DC3?logo=r\&logoColor=white)
-!\[Shiny](https://img.shields.io/badge/Interface-Shiny-447099)
-!\[Project](https://img.shields.io/badge/Project-STATS%20400-blue)
-!\[License](https://img.shields.io/badge/Original%20toolbox-CC%20BY%203.0-lightgrey)
 
 An interactive, play-money blackjack simulator built in **R and Shiny** to demonstrate the probability models introduced in *A Markov Chain Analysis of Blackjack Strategy* by Michael B. Wakin and Christopher J. Rozell (2004). This project adapts their original MATLAB Blackjack Markov Chain Toolbox into a single R script, combining playable blackjack with visual explanations of absorbing Markov chains, stationary distributions, and expected value.
 

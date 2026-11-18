@@ -61,8 +61,6 @@ Multiplayer is local and turn-based: all players take turns on the same computer
 * [RStudio Desktop](https://posit.co/download/rstudio-desktop/) (optional but recommended).
 * A modern web browser.
 
-MATLAB is not required.
-
 ### 1\. Download the repository
 
 On GitHub, select **Code → Download ZIP**, extract the archive, and locate `Blackjack\_MC\_Shiny.R`. Alternatively, copy the repository URL from the **Code** menu and clone it with Git.

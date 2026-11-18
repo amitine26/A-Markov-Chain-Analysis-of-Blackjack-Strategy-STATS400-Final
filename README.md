@@ -210,25 +210,12 @@ The app is not a full replication of every numerical result or figure in the ori
 The minimum repository contains:
 
 ```text
-A\_Markov\_Chain\_Analysis\_of\_Blackjack\_Strategy\_STATS400\_Final/
+A-Markov-Chain-Analysis-of-Blackjack-Strategy-STATS400-Final/
 ├── Blackjack\_MC\_Shiny.R   # Mathematical models, game engine, UI, and self-tests
 └── README.md               # Project documentation
 ```
 
-The R script is intentionally self-contained. It contains the original strategy tables, shoe-equilibrium functions, hand-model functions, physical shoe simulation, inline HTML/CSS card rendering, and Shiny session controller.
-
-### Original MATLAB toolbox Adaptation
-
-|Original toolbox component|R adaptation|
-|-|-|
-|`setupVariables.m`, `setStrategy.m`|Embedded strategy tables and `make\_policy()`|
-|`calcDealerTrans.m`, `calcPlayerTrans.m`|Recursive dealer and player calculations|
-|`calcPlayerTransSplit.m`, `computeTermProfit.m`|Split-hand and terminal payoff calculations|
-|`advSingleHand.m`, `advInsurance.m`|Expected-payoff analysis|
-|`equilib.m`, `reshuffle.m`, `lmh2deckPdf.m`|Shoe state and stationary distribution calculations|
-|`BJMCmainScript.m`|Interactive R/Shiny application and session controller|
-
-The adaptation replaces dense matrix calculations with recursive or closed-form equivalents where appropriate and adds a finite-shoe game engine, browser interface, multiplayer support, and visualizations.
+The R script is intentionally self-contained. It contains the original strategy tables, shoe-equilibrium functions, hand-model functions, physical shoe simulation, inline HTML/CSS card rendering, and Shiny session controller. The adaptation replaces dense matrix calculations with recursive or closed-form equivalents where appropriate and adds a finite-shoe game engine, browser interface, multiplayer support, and visualizations.
 
 ## Testing and limitations
 

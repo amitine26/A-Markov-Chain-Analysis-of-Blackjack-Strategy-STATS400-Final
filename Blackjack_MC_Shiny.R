@@ -442,11 +442,28 @@ card_ui <- function(card,hidden=FALSE) {
 card_row <- function(cards,hide=FALSE) {
   tags$div(class='cardrow',if(nrow(cards)) lapply(seq_len(nrow(cards)),function(i) card_ui(cards[i,,drop=FALSE],hide && i==2L)))
 }
+
 ui <- fluidPage(
   tags$head(tags$meta(name='viewport',content='width=device-width, initial-scale=1'),tags$style(HTML(css)),
     tags$script(HTML("Shiny.addCustomMessageHandler('enableButtons', function(x) { Object.keys(x).forEach(function(k) { var el=document.getElementById(k); if(el) el.disabled=!x[k]; }); });"))),
-  tags$h1('Blackjack | Markov Chain Lab'),
-  tags$p(class='sub','Interactive Stats 400 demonstration · local play-money only · no real wagers'),
+  tags$div(
+    style = "display:flex; justify-content:space-between;
+           align-items:center; margin-bottom:18px;",
+    
+    tags$div(
+      tags$h1('Blackjack | Markov Chain Lab'),
+      tags$p(class='sub',
+             'Interactive Stats 400 demonstration · local play-money only · no real wagers')
+    ),
+    
+    tags$img(
+      src = "https://silhouettesfree.com/movies/despicable-me/gru-silhouette-image-2.png",
+      alt = "Gru",
+      style = "width:55px; height:auto;
+             margin-right:10px;
+             filter:invert(1);"
+    )
+  ),
   fluidRow(
     column(3,
       tags$div(class='panelx',tags$h4('Session settings'),
